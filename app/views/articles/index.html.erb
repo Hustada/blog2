@@ -1,0 +1,49 @@
+
+
+
+<div class="bit-75">
+
+  <% @article.each do |article| %>
+
+    <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
+    <br>
+
+    <ul id="article-links">
+      <div id="article-image"><%= image_tag article.image_url %></div>
+      <br>
+      <li id="article-text"><%= article.text %></li>
+    <br>
+    <%= article.created_at %>
+    <br>
+      <li><%= link_to 'Make a Comment', article_path(article) %></li>
+      <li><%= link_to 'Edit',           edit_article_path(article) %></li>
+      <li><%= link_to 'Destroy',        article_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?'} %></li>
+    </ul>
+     
+  <% end %>
+
+<div id="new-article-path"><%= link_to 'New article', new_article_path %></div>
+</div>
+<div class="bit-5">
+  <h2>Recent Posts</h2>
+  
+    <br>
+  
+  <% @article.each do |article| %>
+  
+    <ul id="recent-article">
+      <li><%= link_to article.title, article_path(article) %></li>
+    </ul>
+  
+  <% end %>
+    <br>
+    <br>
+  
+  <h2>Archives</h2>
+  
+    <br>
+    <br>
+  
+  <h2>Tags</h2>
+</div>
