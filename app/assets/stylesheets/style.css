@@ -1,15 +1,20 @@
 
 
 #about {
-  background: #efeddf;
+  background: white;
   padding: 20px;
-  border: 2px solid #57645d;
+  border: .5px solid #57645d;
   color: #57645d;
   text-indent: left;
 }
 
 #about-content {
   text-align: left;
+  background: white;
+}
+
+#about h1 {
+  color: #6CA1B1;
 }
 
 #article-image {
@@ -46,7 +51,7 @@
   padding: 20px;
   text-align: center;
   border: .5px solid #b4b4b4;
-  color: #F7AC20;
+  color: #F18C3C;
   float: right;
   display: block;
 }
@@ -69,9 +74,13 @@
 #contact {
   background: white;
   padding: 20px;
-  border: 2px solid #57645d;
+  border: .5px solid #57645d;
   color: #57645d;
   text-indent: left;
+}
+
+#contact h1 {
+  color: #6CA1B1;
 }
 
 #contact-content {
@@ -176,7 +185,7 @@ html,body {
 }
 
 #title a {
-  color: black;
+  color: #6CA1B1;
   text-decoration: none !important;
 }
 
