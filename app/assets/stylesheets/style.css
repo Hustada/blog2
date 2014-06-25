@@ -41,7 +41,12 @@
 #article-show {
   background: white;
   padding: 20px;
-  border: 2px solid #57645d;
+  border: .5px solid #57645d;
+  color: #555;
+}
+
+#article-show h1 strong {
+  color: #6CA1B1;
 }
 
 
