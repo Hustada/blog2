@@ -15,6 +15,7 @@ gem 'carrierwave'
 gem 'bcrypt-ruby'
 gem 'bootstrap'
 gem 'bootstrap-sass'
+gem 'devise'
 
 group :doc do
 

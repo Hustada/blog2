@@ -45,7 +45,7 @@
   background: white;
   padding: 20px;
   text-align: center;
-  border: 1px solid #b4b4b4;
+  border: .5px solid #b4b4b4;
   color: #606e67;
   float: right;
   display: block;
@@ -55,7 +55,7 @@
   background: white;
   padding: 20px;
   text-align: left;
-  border: 1px solid #b4b4b4;
+  border: .5px solid #b4b4b4;
   color: #555;
   text-indent: 10px;
 }
@@ -112,7 +112,7 @@ html,body {
 }
 
 #main-header {
-  height: 180px;
+  height: 120px;
   background: #fff;
   position: fixed;
   top: 0px;
@@ -126,7 +126,7 @@ html,body {
 
 #main-nav ul {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 #main-nav ul li {
