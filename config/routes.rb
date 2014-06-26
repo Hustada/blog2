@@ -1,5 +1,9 @@
 Blog::Application.routes.draw do
   devise_for :admins
+
+  devise_scope :admin do get "/admins/sign_out", to: 'devise/sessions#destroy'
+  end
+  
   devise_for :users
   root 'articles#index'
 
@@ -9,8 +13,7 @@ Blog::Application.routes.draw do
 
   get "welcome/index"
 
-  devise_scope :admin do get "/admins/sign_out", to: 'devise/sessions#destroy'
-  end
+  
 
   match '/about',     to: 'static_pages#about',   via: 'get'
   match '/contact',   to: 'static_pages#contact',   via: 'get'
