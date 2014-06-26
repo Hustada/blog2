@@ -16,11 +16,11 @@
     <%= article.created_at %>
     <br>
       
-    <% if user_signed_in? %>
+    <% if admin_signed_in? %>
       <li><%= link_to 'Edit',           edit_article_path(article) %></li>
       <li><%= link_to 'Destroy',        article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?'} %></li>
-      <li><%= link_to 'New article', new_article_path %>,</li>
+      <li><%= link_to 'New article', new_article_path %></li>
     <% else %>                
       <li><%= link_to 'Make a Comment', article_path(article) %></li>              
     </ul>
