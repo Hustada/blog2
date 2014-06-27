@@ -17,6 +17,16 @@
   color: #6CA1B1;
 }
 
+#admin-links {
+  float: right;
+  margin-right: 20px;
+}
+
+#admin-links a {
+  list-style: none;
+  text-decoration: none;
+}
+
 #article-image {
   float: left;
  }

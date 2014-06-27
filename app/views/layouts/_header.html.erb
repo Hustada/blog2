@@ -7,4 +7,12 @@
             <li><%= link_to "Contact",  contact_path %></li>
         </ul>
       </nav>
+  <div id="admin-links">
+    <ul>
+      <% if admin_signed_in? %>
+      <li><%= link_to "Admin Sign Out",    destroy_admin_session_path %></li>
+    </ul>
+  </div>
+      <% else %>
+      <% end %>
     </header>
