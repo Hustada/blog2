@@ -20,12 +20,16 @@
 #admin-links {
   float: right;
   height: 20px;
-  margin-right: 20px;
+  margin-right: 20px;     
 }
 
-#admin-links ul li a {
+#admin-links ul li  {
   list-style: none;
   text-decoration: none;
+}
+#admin-links ul li a {
+  text-decoration: none;
+  color: #555;
 }
 
 #article-image {
@@ -148,7 +152,7 @@ html,body {
 }
 
 #main-header {
-  height: 120px;
+  height: 140px;
   background-image: -webkit-gradient(
   linear,
   left bottom,
@@ -156,11 +160,11 @@ html,body {
   color-stop(0.01, #A1A3A6),
   color-stop(1, #CBCDCF)
 );
-background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
   position: fixed;
   top: 0px;
   margin: auto;
