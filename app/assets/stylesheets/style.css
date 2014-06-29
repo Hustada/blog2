@@ -153,6 +153,12 @@ html,body {
 
 #main-header {
   height: 140px;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  z-index: 100000;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
   background-image: -webkit-gradient(
   linear,
   left bottom,
@@ -160,17 +166,12 @@ html,body {
   color-stop(0.01, #A1A3A6),
   color-stop(1, #CBCDCF)
 );
-  background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  position: fixed;
-  top: 0px;
-  margin: auto;
-  z-index: 100000;
-  width: 100%;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
 
 }
 
@@ -234,5 +235,28 @@ html,body {
   text-decoration: none !important;
 }
 
-
+.progress {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  height: 100px;
+  width: 100px;
+}
+ 
+.progress .percent {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(40, 42, 40, 0.9);
+  position: absolute;
+  line-height: 100px;
+  width: 100%;
+}
+ 
+.progress svg path { fill: none; }
+ 
+.progress svg.progress-circle path {
+  stroke: rgba(255, 0, 0, 0.55);
+  stroke-width: 2;
+}
 
