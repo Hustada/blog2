@@ -8,6 +8,8 @@ class ArticlesController < ApplicationController
 
   def index
     @article = Article.all
+    @articles = Article.find(:all, :order => 'created_at DESC')
+    @articles_by_month = Article.find(:all, :order => 'created_at DESC').group_by { |article| article.created_at.strftime("%B %Y") }
   end
 
   def create  
@@ -19,6 +21,8 @@ class ArticlesController < ApplicationController
       render 'new'
     end
   end
+
+
 
   def edit
     @article = Article.find(params[:id])

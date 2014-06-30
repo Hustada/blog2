@@ -1,6 +1,3 @@
-
-
-
 <div class="bit-75">
 
   <% @article.each do |article| %>
@@ -25,37 +22,36 @@
       <li><%= link_to 'Make a Comment', article_path(article) %></li>              
     </ul>
     <% end %>   
-  <% end %>
+  <% end %>
 
 <div id="new-article-path"></div>
 </div>
 <div class="bit-5">
+  <h2>Recent Posts</h2>
   
-  <h1>Recent Posts</h1>
-  <div class="archives">
-  <% @articles_month.each do |month, articles| %>
-  <h2><%= month.strftime('%B') %></h2>
-  <% for article in articles %>
-  <strong><%= article.name %></strong> 
-  due on <%= article.due_at.to_date.to_s(:long) %> 
-</div>
-<% end %>
-<% end %>
+    <br>
   
   <% @article.each do |article| %>
   
     <ul id="recent-article">
       <li><%= link_to article.title, article_path(article) %></li>
     </ul>
+  
   <% end %>
- 
     <br>
     <br>
   
-  <div class="archives">
   <h2>Archives</h2>
- 
-  </div>
+   
+  <% @articles_by_month.each do |monthname, articles| %>
+    <h3="month-archive"><%= monthname %></h3>
+      <ul id="archive">
+       <% articles.each do |article| %>
+      <li><%= link_to article.title, article_path(article) %></li>
+    <% end %>
+    <% end %>
+      </ul>
+
   
-  <h2>Tags</h2>
+  <!-- <h2>Tags</h2> -->
 </div>
