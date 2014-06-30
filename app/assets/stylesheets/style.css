@@ -98,7 +98,22 @@
   color: #6CA1B1;
 }
 
+.bit-4 {
+  text-align: center;
+  color: #555;
+}
 
+.bit-4 h2 {
+  padding: 20px;
+}
+
+.bit-4 p {
+  text-align: left;
+}
+.bit-4 p a {
+  color: #F18C3C;
+  text-decoration: none;
+}
 
 .bit-5 {
   background: white;
@@ -154,13 +169,31 @@ footer {
   color-stop(0.01, #A1A3A6),
   color-stop(1, #CBCDCF)
 );
-background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
-background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
-  box-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+  background-image: -o-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -moz-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -webkit-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: -ms-linear-gradient(left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
+  box-shadow: 0 -5px 6px rgba(0,0,0,0.5);
   }
+
+  #footer-about {
+    color: #555;
+  }
+
+  #footer-ad {
+    color: #555;
+  }
+
+  #footer-archives {
+    color: #555;
+  }
+
+  #footer-contact {
+    color: #555;
+  }
+
+  
 
 
 
