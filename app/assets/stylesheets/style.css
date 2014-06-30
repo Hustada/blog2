@@ -32,6 +32,16 @@
   color: #555;
 }
 
+
+#archive li {
+  list-style: none;
+}
+
+#archive li a {
+  text-decoration: none;
+  color: #555;
+}
+
 #article-image {
   float: left;
  }
