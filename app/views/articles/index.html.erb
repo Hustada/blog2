@@ -42,10 +42,9 @@
     <br>
   
   <h2>Archives</h2>
-
    
   <% @articles_by_month.each do |monthname, articles| %>
-    <h3="month-archive"><%= monthname %></h3>
+    <h4 id="month-archive"><%=link_to monthname, archives_path %></h3>
       <ul id="archive">
        <% articles.each do |article| %>
       <li><%= link_to article.title, article_path(article) %></li>

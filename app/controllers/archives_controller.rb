@@ -1,8 +1,9 @@
-# class ArchivesController < ApplicationController
+class ArchivesController < ApplicationController
 
+  def index
+    @articles = Article.all(:select => "title, id, created_at", :order => "created_at DESC")
+    @articles_by_months = @articles.group_by { |t| t.created_at.beginning_of_month }
+  end
 
-#   def index
-#     @arcticles = Article.all.group_by(:select => "title, id, created_at", :order = "created_at DESC")
-#     @articles_month = @arcticles.group_by { |t| t.due_at.month}
-#   end
-# end
+end
+
