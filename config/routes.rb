@@ -11,6 +11,7 @@ Blog::Application.routes.draw do
     resources :comments
   end
 
+
   get "welcome/index"
 
   
@@ -19,7 +20,6 @@ Blog::Application.routes.draw do
   match '/contact',   to: 'static_pages#contact',   via: 'get'
   match '/archives',  to: 'archives#index',         via: 'get'
   
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

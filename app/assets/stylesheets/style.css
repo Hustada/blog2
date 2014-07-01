@@ -195,7 +195,9 @@ footer {
 
   
 
-
+#title {
+  padding: 20px;
+}
 
 html,body {
   background: #EFF0EB;

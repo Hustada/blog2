@@ -1,17 +1,17 @@
+
+
 <div class="bit-75">
 
   <% @article.each do |article| %>
-
     <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
     <br>
-
     <ul id="article-links">
       <div id="article-image"><%= image_tag article.image_url %></div>
       <br>
       <li id="article-text"><%= article.text %></li>
+    <p>Posted on <%= article.created_at %></p>
     <br>
-    <%= article.created_at %>
-    <br>
+
       
     <% if admin_signed_in? %>
       <li><%= link_to 'Edit',           edit_article_path(article) %></li>
@@ -19,7 +19,7 @@
                     method: :delete, data: { confirm: 'Are you sure?'} %></li>
       <li><%= link_to 'New article', new_article_path %></li>
     <% else %>                
-      <li><%= link_to 'Make a Comment', article_path(article) %></li>              
+      <li><%= link_to 'Make a Comment', article_path(article) %><p>Comments(<%= article.comments.count %>)</p></li>      
     </ul>
     <% end %>   
   <% end %>

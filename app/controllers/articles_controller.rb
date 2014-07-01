@@ -8,7 +8,14 @@ class ArticlesController < ApplicationController
 
   def index
     @article = Article.all
-    @articles = Article.find(:all, :order => 'created_at DESC')
+
+
+    @articles = Article.order('created_at DESC')
+    @articles_by_month = Article.find(:all, :order => 'created_at DESC').group_by { |article| article.created_at.strftime("%B %Y") }
+  end
+  
+
+  def month_count
     @articles_by_month = Article.find(:all, :order => 'created_at DESC').group_by { |article| article.created_at.strftime("%B %Y") }
   end
 
