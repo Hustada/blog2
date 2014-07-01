@@ -17,6 +17,7 @@ gem 'bootstrap'
 gem 'bootstrap-sass'
 gem 'devise'
 
+
 group :doc do
 
   gem 'sdoc', require: false
@@ -30,7 +31,11 @@ group :development, :test do
   gem 'capybara'
 end
 
+
+
 group :development do
+  gem 'quiet_assets'
+  gem 'pry'
   gem 'sqlite3'
 end
 
