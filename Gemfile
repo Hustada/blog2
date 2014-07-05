@@ -16,6 +16,7 @@ gem 'bcrypt-ruby'
 gem 'bootstrap'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'cancan'
 
 
 

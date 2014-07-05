@@ -3,6 +3,10 @@ Blog::Application.routes.draw do
 
   devise_scope :admin do get "/admins/sign_out", to: 'devise/sessions#destroy'
   end
+
+  devise_scope :admin do
+    get "/admins/sign_in", to: "devise/sessions#new"
+  end
   
   devise_for :users
   root 'articles#index'

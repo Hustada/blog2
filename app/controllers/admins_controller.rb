@@ -1,9 +1,14 @@
 class AdminsController < ApplicationController
-  before_action :authenticate
+  before_action :authenticate_admin!
 
-  def authenticate
-    authenticate_or_request_http_basic('Administration') do |email, password|
-      email == 'hustada80@gmail.com' && password == '18schrodinger87'
-    end
+
+
+  def index
+  end
+
+  def created
   end
 end
+
+
+
