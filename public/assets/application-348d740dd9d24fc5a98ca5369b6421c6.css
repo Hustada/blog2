@@ -1,0 +1,472 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*
+*
+* Lemonade v1.1
+* Copyright 2013, Joe Richardson
+* lemonade.im
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+/* Set the width of the grid */
+.frame {
+  margin: auto;
+  width: 1100px;
+  margin-top: 200px;
+  min-height: 100%;
+  margin-bottom: -330px;
+  position: relative;
+}
+
+/* Attribute selector */
+[class*='bit-'] {
+  float: left;
+  padding: 0.3em;
+}
+
+/* Floats last ".bit-" to the right */
+[class*='bit-']:last-of-type {
+  float: right
+}
+
+/* Clearfix */
+.frame:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+/* Main Widths */
+.bit-1  { width: 100% }
+.bit-2  { width: 50% }
+.bit-3  { width: 33.33% }
+.bit-4  { width: 25% }
+.bit-5  { width: 20% }
+.bit-6  { width: 16.6666666667% }
+.bit-7  { width: 14.2857142857% }
+.bit-8  { width: 12.5% }
+.bit-9  { width: 11.1111111111% }
+.bit-10 { width: 10% }
+.bit-11 { width: 9.09090909091% }
+.bit-12 { width: 8.33% }
+.bit-75 { width:75%}
+.bit-25 { width:25%}
+
+/* Landscape mobile & down */
+@media (max-width: 30em) {
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-4,
+  .bit-5,
+  .bit-6,
+  .bit-7,
+  .bit-8,
+  .bit-9,
+  .bit-10,
+  .bit-11,
+  .bit-12 {
+    width: 100%;
+  }
+}
+
+/* Portrait tablet to landscape */
+@media (min-width: 30em) and (max-width: 50em) {
+  .bit-4,
+  .bit-6,
+  .bit-8,
+  .bit-10,
+  .bit-12 {
+    width: 50%
+  }
+
+  .bit-1,
+  .bit-2,
+  .bit-3,
+  .bit-5,
+  .bit-7,
+  .bit-9,
+  .bit-11 {
+    width: 100%
+  }
+}
+
+/* Landscape to small desktop */
+@media (min-width: 50em) and (max-width: 68.750em) {
+  .bit-2,
+  .bit-7 {
+    width: 100%
+  }
+
+  .bit-4,
+  .bit-8,
+  .bit-10,
+  .bit-12 {
+    width: 50%
+  }
+}
+
+
+#about {
+  background: white;
+  padding: 20px;
+  border: .5px solid #57645d;
+  color: #57645d;
+  text-indent: left;
+}
+
+#about-content {
+  text-align: left;
+  background: white;
+}
+
+#about h1 {
+  color: #6CA1B1;
+}
+
+#admin-links {
+  float: right;
+  height: 20px;
+  margin-right: 20px;     
+}
+
+#admin-links ul li  {
+  list-style: none;
+  text-decoration: none;
+}
+#admin-links ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+
+#archive li {
+  list-style: none;
+}
+
+#archive li a {
+  text-decoration: none;
+  color: #555;
+}
+
+.archives {
+  background: white;
+  padding: 20px;
+}
+
+.archives h2 {
+  color: #6CA1B1;
+}
+
+.archives h3 {
+  color: #555;
+}
+
+#archive-links {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#archive-links li a {
+  color: #F18C3C;
+  text-decoration: none;
+}
+
+#archive-links a:hover { color: black; }
+
+
+
+
+#article-image {
+  float: left;
+ }
+
+
+
+
+
+
+#article-links {
+  list-style-type: none;
+}
+
+#article-links a {
+  font-weight: bold;
+  color: #3f4944;
+  text-decoration: none;
+}
+
+#article-links img {
+  margin-right: 20px;
+}
+
+#article-show {
+  background: white;
+  padding: 20px;
+  border: .5px solid #57645d;
+  color: #555;
+}
+
+#article-show h1 strong {
+  color: #6CA1B1;
+}
+
+.sexy_line { 
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+.bit-4 {
+  text-align: center;
+  color: #555;
+}
+
+.bit-4 h2 {
+  padding: 20px;
+}
+
+.bit-4 p {
+  text-align: left;
+}
+.bit-4 p a {
+  color: #F18C3C;
+  text-decoration: none;
+}
+
+.bit-5 {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border: .5px solid #b4b4b4;
+  color: #F18C3C;
+  float: right;
+  display: block;
+  -webkit-box-shadow: 3px 3px 5px 6px #262523;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #262523;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #262523;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+}
+
+.bit-75 {
+  background: white;
+  padding: 20px;
+  text-align: left;
+  color: #555;
+  text-indent: 10px;
+  -webkit-box-shadow: 3px 3px 5px 6px #262523;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #262523;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #262523;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+  
+}
+
+
+.clearfooter {
+  height: 330px;
+  clear: both;
+}
+
+#contact {
+  background: white;
+  padding: 20px;
+  border: .5px solid #57645d;
+  color: #57645d;
+  text-indent: left;
+}
+
+#contact h1 {
+  color: #6CA1B1;
+}
+
+#contact-content {
+  text-align: left;
+}
+
+
+footer {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 330px;
+  background-image: url('background3.png');
+  -moz-box-shadow: 0 -5px 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 -5px 6px rgba(0,0,0,0.5);
+  box-shadow: 0 -5px 6px rgba(0,0,0,0.5);
+  }
+
+  #footer-about {
+    color: #555;
+  }
+
+  #footer-ad {
+    color: #555;
+  }
+
+  #footer-archives {
+    color: #555;
+  }
+
+  #footer-contact {
+    color: #555;
+  }
+
+  
+
+#title {
+  padding: 20px;
+}
+
+html,body {
+  background-image: url('tweed.png');
+  height: 100%;
+}
+
+
+#login {
+  float: right;
+  margin-right: 10px;
+}
+
+#login a {
+  text-decoration: none;
+  color: #efeddf;
+}
+
+#login-form {
+  text-align: center;
+  color: #57645d;
+}
+
+#main-header {
+  height: 140px;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  z-index: 100000;
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  background-image: url('background3.png');
+
+
+}
+
+#main-nav {
+}
+
+
+#main-nav ul {
+  text-align: center;
+  margin-top: 80px;
+}
+
+#main-nav ul li {
+  padding-left: 10px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: x-large;
+}
+
+#main-nav a:hover { color: black; }
+
+#month-archive {
+  padding: 10px;
+}
+
+#month-archive a {
+  color: #555;
+  text-decoration: none;
+}
+
+#month-archive a:hover { color: black; }
+
+#new-article {
+  color: white;
+}
+
+#new-article1 {
+  color: #6CA1B1;
+}
+
+
+#new-article h5 {
+  color: #555;
+}
+
+#new-article input {
+  color: #555;
+}
+
+#new-article-path a {
+  font-weight: bold;
+  color: #3f4944;
+}
+
+#new-user {
+  text-align: center;
+  color: #57645d;
+}
+
+#recent-article li {
+  list-style: none;
+}
+
+#recent-article li a {
+  color: #555;
+  text-decoration: none;
+}
+
+#recent-article li a:hover { color: black; }
+
+
+
+
+#sign-up {
+  float: right;
+  margin-right: 10px;
+}
+
+#sign-up a {
+  text-decoration: none;
+  color: #efeddf;
+}
+
+#title a {
+  color: #6CA1B1;
+  text-decoration: none !important;
+}
+
+
+
