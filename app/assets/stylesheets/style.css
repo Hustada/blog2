@@ -57,6 +57,8 @@
 
 #archive-links {
   list-style: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 #archive-links li a {
@@ -69,6 +71,8 @@
 #article-image {
   float: left;
  }
+
+
 
 
 
@@ -96,6 +100,13 @@
 
 #article-show h1 strong {
   color: #6CA1B1;
+}
+
+.sexy_line { 
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
 }
 
 .bit-4 {
@@ -132,6 +143,7 @@
   border: .5px solid #b4b4b4;
   color: #555;
   text-indent: 10px;
+  display: block;
 }
 
 
@@ -265,6 +277,8 @@ background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
   font-size: x-large;
 }
 
+#main-nav a:hover { color: black; }
+
 #month-archive {
   padding: 10px;
 }
@@ -278,6 +292,18 @@ background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
   color: white;
 }
 
+#new-article1 {
+  color: #6CA1B1;
+}
+
+
+#new-article h5 {
+  color: #555;
+}
+
+#new-article input {
+  color: #555;
+}
 
 #new-article-path a {
   font-weight: bold;
@@ -298,6 +324,8 @@ background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
   text-decoration: none;
 }
 
+
+
 #sign-up {
   float: right;
   margin-right: 10px;
@@ -313,28 +341,5 @@ background-image: linear-gradient(to left bottom, #A1A3A6 1%, #CBCDCF 100%);
   text-decoration: none !important;
 }
 
-.progress {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-  height: 100px;
-  width: 100px;
-}
- 
-.progress .percent {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  color: rgba(40, 42, 40, 0.9);
-  position: absolute;
-  line-height: 100px;
-  width: 100%;
-}
- 
-.progress svg path { fill: none; }
- 
-.progress svg.progress-circle path {
-  stroke: rgba(255, 0, 0, 0.55);
-  stroke-width: 2;
-}
+
 

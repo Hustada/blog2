@@ -1,7 +1,6 @@
 
 
 <div class="bit-75">
-
   <% @article.each do |article| %>
     <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
     <br>
@@ -10,7 +9,8 @@
       <br>
       <li id="article-text"><%= article.text %></li>
     <p>Posted on <%= article.created_at %></p>
-    <br>
+  
+ 
 
       
     <% if admin_signed_in? %>
@@ -21,8 +21,11 @@
     <% else %>                
       <li><%= link_to 'Make a Comment', article_path(article) %><p>Comments(<%= article.comments.count %>)</p></li>      
     </ul>
+    <div class="sexy_line"></div>
     <% end %>   
   <% end %>
+
+
 
 <div id="new-article-path"></div>
 </div>

@@ -3,7 +3,6 @@
       <br>
     <% @articles_by_months.sort.reverse.each do |month, articles| %>
     <h3><%=h month.strftime("%B %Y") %></h3>
-      <br>
     <ul id="archive-links">
         <% for article in articles %>
         <li><%=h link_to article.title, article_path(article) %></li>
