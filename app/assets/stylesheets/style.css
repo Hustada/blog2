@@ -290,11 +290,19 @@ html,body {
 
 
 #new-article h5 {
-  color: #555;
+  color: #6CA1B1;
 }
 
 #new-article input {
-  color: #555;
+  color: #6CA1B1;
+}
+
+#new-article p input {
+  color: black;
+}
+
+#new-article p {
+  color: #6CA1B1;
 }
 
 #new-article-path a {
