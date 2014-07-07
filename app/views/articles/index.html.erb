@@ -6,8 +6,12 @@
     <br>
     <ul id="article-links">
       <div id="article-image"><%= image_tag article.image_url %></div>
+      <div>
+        <iframe width="560" height="345" src=<%= article.video_url %> frameborder="0" allowfullscreen></iframe>
+      </div>
       <br>
       <li id="article-text"><%= article.text %></li>
+
     <p>Posted on <%= article.created_at %></p>
   
  
