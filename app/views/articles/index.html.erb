@@ -5,14 +5,18 @@
     <h2 id="title"><%= link_to article.title, article_path(article) %></h2>
     <br>
     <ul id="article-links">
-      <div id="article-image"><%= image_tag article.image_url %></div>
-      <div>
-        <iframe width="560" height="345" src=<%= article.video_url %> frameborder="0" allowfullscreen></iframe>
-      </div>
-      <br>
+      <% if article.video_url? %>
+      <iframe width="560" height="345" src=<%= article.video_url %> frameborder="0" allowfullscreen></iframe>
+    <br>
       <li id="article-text"><%= article.text %></li>
-
+      <% else %>
+      <div id="article-image"><%= image_tag article.image_url %></div>
+    <br>
+      <li id="article-text"><%= article.text %></li>
     <p>Posted on <%= article.created_at %></p>
+    <% end %>
+
+
   
  
 
